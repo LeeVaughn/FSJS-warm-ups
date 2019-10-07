@@ -33,16 +33,9 @@ const steps = document.querySelectorAll('.step');
  * Event listener for test button
  */
 test.addEventListener('click', () => {
-
-
   // YOUR CODE GOES HERE!!! Do the steps below to complete this challenge
 
-
   // 1) If you haven't already, preview the index.html file in Chrome, and open the Chrome DevTools
-      // If you don't know how to do any of those things, please reach out in Slack for some friendly support
-      // PRO TIP: This exercise promotes getting in the habit of logging values to the console after every few lines of code. This process will save you time and debugging headaches down the road.
-      // PRO TIP: This exercise requires using the `typeof` operator, which returns the data type of the value it is used on.  For more info, check out the MDN docs, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
-
 
   // 2) Create a `myString` variable, log it to the console and print it to the screen
       // 2a) Create a variable named myString and set it equal to the string 'Treehouse'
@@ -52,7 +45,13 @@ test.addEventListener('click', () => {
       // 2e) Set the `innerHTML` of the `stringTypeElement` variable above equal to the `myStringType` variable
       // 2f) Take a moment to inspect the results on the page and especially in the console
       // NOTE: Comment out or delete log statements that you don't need any more to keep from overcrowding the console
+    const myString = "Treehouse";
+    const myStringType = (typeof myString);
 
+    console.log(myString);
+
+    stringElement.innerHTML = myString;
+    stringTypeElement.innerHTML = myStringType;
 
   // 3) Create a `myNumber` variable, log it to the console and print it to the screen
       // 3a) Create a variable named myNumber and set it equal to a number between 1 and 10
@@ -60,6 +59,12 @@ test.addEventListener('click', () => {
       // 3c) Use `console.log()` to log out the `myNumber` variable
       // 3d) Set the `innerHTML` of the `numberTypeElement` variable above equal to `typeof myNumber`
       // 3e) Take a moment to inspect the results on the page and especially in the console
+    const myNumber = 8;
+
+    console.log(myNumber);
+
+    numberElement.innerHTML = myNumber;
+    numberTypeElement.innerHTML = (typeof myNumber);
 
 
   // 4) Create a `myBoolean` variable, log it to the console and print it to the screen
