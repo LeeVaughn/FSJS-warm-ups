@@ -24,11 +24,11 @@ const twelveSidedDie = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   // NOTE: Introducing Functions video — https://teamtreehouse.com/library/introducing-functions-5
   // NOTE: Create a Random Number video — https://teamtreehouse.com/library/javascript-basics/working-with-numbers/create-a-random-number
   // 2b) `return` the random number variable
-  function diceRoll(array) {
-    const roll = Math.ceil(Math.random() * array.length);
+function diceRoll(array) {
+  const roll = Math.ceil(Math.random() * array.length);
     
-    return roll;
-  }
+  return roll;
+}
 
 // 3) Complete the steps in the comments in the event listener below
 /**
