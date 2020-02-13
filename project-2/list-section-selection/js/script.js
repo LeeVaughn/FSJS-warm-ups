@@ -37,7 +37,7 @@ function sectionSelection(list, section) {
   for (let i = 0; i < list.length; i++) {
     // Add a conditional inside the loop
       // If the current loop index is >= the `startIndex` variable && the current loop index <= the `endIndex` variable
-    if (i >= startIndex) {
+    if (i >= startIndex && i <= endIndex) {
       // Set the style.color of the the list item to 'green', or your favorite color
       list[i].style.color = "green";
     }
